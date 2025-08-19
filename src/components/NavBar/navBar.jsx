@@ -3,15 +3,29 @@ import './NavBar.css'; // Importando el archivo CSS
 
 const NavBar = () => {
   return (
-    <div className="navbar">
-      <ul className="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre Mi</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
+    <header className="nav">
+      <div className="nav__inner">
+        <a href="#home" className="nav__logo">
+          <span className="logo-mark">GV</span>
+        </a>
+
+        <nav className="nav__links">
+          <a href="#home" className="active">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#testimonials">Testimonials</a>
+        </nav>
+
+        <a href="#contact" className="btn btn--cta">Contact me</a>
+
+        {/* menú hamburguesa opcional */}
+        <button className="nav__burger" aria-label="Open menu">
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+    </header>
   );
 }
 

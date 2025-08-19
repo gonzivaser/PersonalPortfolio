@@ -7,6 +7,5 @@ import NavBar from './components/NavBar/navBar.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <NavBar />
-    <AboutMe />
   </StrictMode>,
 )

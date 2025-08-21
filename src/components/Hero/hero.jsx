@@ -14,9 +14,8 @@ const Hero = () => {
             </h1>
 
             <p className="hero-lead">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor amet sint.
-              Velit officia consequat duis enim velit mollit. Exercitation veniam
-              consequat sunt nostrud amet.
+              Passionate about process development and automation, focused on creating 
+              technological solutions that enhance efficiency and simplify everyday tasks.
             </p>
 
             <a href="#contact" className="btn btn-primary">Contact Me</a>

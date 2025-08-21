@@ -1,0 +1,113 @@
+:root{
+  --gradient-hero: linear-gradient(135deg, #eef1ff 0%, #f8f9fc 100%);
+  --card: #ffffff;
+  --text-900: #1f2937;
+  --text-600: #4b5563;
+  --text-500: #6b7280;
+  --brand: #2563eb;
+  --violet-blue: #5b5fef;
+  --radius-lg: 18px;
+  --shadow-soft: 0 10px 40px rgba(31,41,55,.08);
+}
+
+/* ====== Layout ====== */
+.about{
+  background: var(--gradient-hero);
+  padding: 80px 0 120px 0; /* menos espacio arriba */
+}
+
+.about__container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ====== Title ====== */
+.about__title{
+  font-size: clamp(48px, 6vw, 72px); /* más grande y llamativo */
+  font-weight: 900;
+  color: var(--text-900);
+  text-align: center;
+  margin-bottom: 70px;
+  letter-spacing: -0.5px;
+}
+
+/* ====== Grid ====== */
+.about__grid{
+  display: grid;
+  gap: 50px;
+}
+
+@media (min-width: 992px){
+  .about__grid{
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 80px;
+  }
+}
+
+/* ====== Left column ====== */
+.about__question{
+  font-size: clamp(24px, 2.5vw, 30px);
+  font-weight: 800;
+  color: var(--violet-blue);
+  margin-bottom: 20px;
+}
+
+.about__desc{
+  font-size: clamp(18px, 2vw, 20px);
+  line-height: 1.9;
+  color: var(--text-600);
+  max-width: 95%;
+}
+
+/* ====== Right column ====== */
+.about__subtitle{
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 700;
+  color: var(--violet-blue);
+  margin-bottom: 20px;
+}
+
+.about__card{
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about__card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 50px rgba(31,41,55,.12);
+}
+
+/* ====== Education list ====== */
+.edu-list{
+  display: grid;
+  gap: 24px;
+}
+
+.edu-card{
+  padding-left: 18px;
+  border-left: 4px solid var(--brand);
+}
+
+.edu-card__title{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 6px;
+}
+
+.edu-card__period{
+  font-style: italic;
+  color: var(--text-500);
+  margin-bottom: 8px;
+}
+
+.edu-card__text{
+  color: var(--text-600);
+  line-height: 1.6;
+  margin: 0;
+}

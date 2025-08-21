@@ -6,17 +6,17 @@ const NavBar = () => {
     <header className="nav">
       <div className="nav__inner">
         <a href="#home" className="nav__logo">
-          <span className="logo-mark">GV</span>
+          <span className="logo-mark">Gonzalo Vaserman</span>
         </a>
 
         <nav className="nav__links">
           <a href="#home" className="active">Home</a>
-          <a href="#services">Services</a>
+          <a href="#about">About Me</a>
           <a href="#projects">Projects</a>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#testimonials">Skills</a>
         </nav>
 
-        <a href="#contact" className="btn btn--cta">Contact me</a>
+        <a href="#contact" className="btn btn--cta">Contact Me</a>
 
         {/* menú hamburguesa opcional */}
         <button className="nav__burger" aria-label="Open menu">

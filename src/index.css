@@ -1,7 +1,11 @@
+:root {
+  --font-rubik: 'Rubik', sans-serif;
+  --font-roboto-mono: 'Roboto Mono', monospace;
+}
 
 body {
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: var(--font-rubik);
   background: var(--bg);
   color: var(--text);
 }
